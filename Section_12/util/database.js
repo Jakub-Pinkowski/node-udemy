@@ -3,7 +3,10 @@ const MongoClient = mongodb.MongoClient
 
 const mongoConnect = (callback) => {
     MongoClient.connect(
-        'mongodb+srv://maximilian:9u4biljMQc4jjqbe@cluster0-ntrwp.mongodb.net/test?retryWrites=true'
+        'mongodb+srv://pinkowskijakub:tBZSMc6Bwusk3gfB@udemy.vdc2gjx.mongodb.net/?retryWrites=true&w=majority',
+        {
+            useUnifiedTopology: true,
+        }
     )
         .then((client) => {
             console.log('Connected!')
