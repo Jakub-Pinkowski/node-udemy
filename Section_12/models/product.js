@@ -8,6 +8,7 @@ class Product {
         this.description = description
         this.imageUrl = imageUrl
     }
+    
 
     save() {
         const db = getDb()
